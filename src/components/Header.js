@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Header({ totalIncome }) {
+function Header({ totalIncome }) {
     return (
         <header>
             <h1>Income Tracker</h1>
@@ -8,3 +8,5 @@ export default function Header({ totalIncome }) {
         </header>
     )
 }
+
+export default Header
