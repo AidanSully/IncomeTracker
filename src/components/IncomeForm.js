@@ -19,7 +19,7 @@ function IncomeForm({ income, setIncome }) {
 
 		desc.current.value = null;
 		price.current.value = null;
-		date.current.value = null
+		date.current.value = null;
 	}
 
 	return (

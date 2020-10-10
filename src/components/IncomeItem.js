@@ -1,10 +1,11 @@
 import React from 'react';
 
 function IncomeItem({ income, index, removeIncome }) {
+	let current = new Date();
 	let date = new Date(income.date);
-	let day = date.getDate();
-	let month = date.getMonth() + 1;
-	let year = date.getFullYear();
+	let day = income.date ? date.getDate() : current.getDate();
+	let month = income.date ? date.getMonth() + 1 : current.getMonth() + 1;
+	let year = income.date ? date.getFullYear() : current.getFullYear();
 
 	const removeHandle = i => {
 		removeIncome(i);
